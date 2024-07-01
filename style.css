@@ -1,0 +1,127 @@
+.budget-box{
+
+    width: 33%;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: 1px solid #1859c9;
+}
+.form-control{
+    background-color: transparent;
+    border: 1px solid #1859c9;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.budget-box input{
+    color: #b9b5b5;
+    background-color: transparent;
+}
+.budget-app{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+.budget-box h1{
+    font-family: system-ui;
+
+    text-align: center;
+    margin-top: 30px;
+}
+.budget-box button {
+ margin-top: 20px;
+ width: 80%;
+ text-align: center;
+ margin-left: 10%;
+
+}
+#Budget-head{
+text-align: center;
+margin-top: 25px;
+font-family: system-ui;
+}
+.budget-data-box{
+    margin-top: 100px;
+    width: 100%;
+    background-color: #1859c9;
+    height: 120px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    padding-top: 25px;
+    
+}
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(75, 73, 74);
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 20px;
+    left: 0.3em;
+    bottom: 0.3em;
+    background-color: yellow; /* Light mode icon color */
+    box-shadow: inset 8px -4px 0 0 yellow; /* Light mode icon box shadow */
+    transition: 0.4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #2196f3; /* Dark mode background color */
+  }
+  .switch{
+ margin: 0 auto;
+  }
+  .switch-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    height: 100px; /* Adjust height as needed */
+  }
+  .switch input:checked + .slider:before {
+    transform: translateX(1.5em); /* Move to the right for checked state */
+    background-color: #2196f3; /* Dark mode icon color */
+    box-shadow: inset 8px -4px 0 0 #fff; /* Dark mode icon box shadow */
+  }
+  .head-toggle{
+display: flex;
+justify-content: center;
+gap: 80px;
+  }
+
+  @media screen and (max-width:525px) {
+    .budget-box{
+        width: 80%;
+    }
+  }
